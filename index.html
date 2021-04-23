@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TODO | Sravan</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">To-Do App</h1>
+            <h2 class="header__subtitle">Add the things yo want to do</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" placeholder="search" class='input' id="search">
+            <label class='checkbox'>
+                <input type="checkbox" id="hideCompleted"  >Hide Completed
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id='message'></div>
+        <div id='searchresult'>
+    
+        </div>
+        <form id='new-todo'>
+            <input type="text" placeholder="Add Something to do" id="addnote" class='input' name='todoInput'>
+            <button class='button'>Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src='todo-functions.js'></script>
+    <script src='todo-app.js'></script>
+</body>
+</html>
